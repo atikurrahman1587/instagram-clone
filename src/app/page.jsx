@@ -1,3 +1,4 @@
+import MiniProfile from "@/components/MiniProfile";
 import Posts from "@/components/Posts";
 import Stories from "@/components/Stories";
 
@@ -11,9 +12,11 @@ export default function Home() {
         <Posts/>
       </section>
       <section className="hidden md:inline-grid md:col-span-1">
-        {/* Mini Profile */}
-
-        {/* Suggestions */}
+        <div className="fixed w-[380px]">
+          {/* Mini Profile */}
+            <MiniProfile/>
+          {/* Suggestions */}
+        </div>
       </section>
     </main>
   )
